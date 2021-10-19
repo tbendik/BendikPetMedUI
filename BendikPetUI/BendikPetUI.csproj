@@ -67,12 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChangePrescription.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="NewPrescription.aspx" />
+    <Content Include="NotifyCustomerScreen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePrescription.aspx.cs">
+      <DependentUpon>ChangePrescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePrescription.aspx.designer.cs">
+      <DependentUpon>ChangePrescription.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +102,13 @@
     </Compile>
     <Compile Include="NewPrescription.aspx.designer.cs">
       <DependentUpon>NewPrescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotifyCustomerScreen.aspx.cs">
+      <DependentUpon>NotifyCustomerScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotifyCustomerScreen.aspx.designer.cs">
+      <DependentUpon>NotifyCustomerScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

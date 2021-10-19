@@ -77,7 +77,7 @@
             <div class="col-sm-8">
                 <ul>
                     <li><a href="NewPrescription.aspx">View new prescription screen</a></li>
-                    <li><a href="#">View notify customer screen</a></li>
+                    <li><a href="NotifyCustomerScreen.aspx">View notify customer screen</a></li>
                     <li><a href="#">View change prescription screen</a></li>
                     <li><a href="#">View not-in-stock screen</a></li>
                 </ul>
