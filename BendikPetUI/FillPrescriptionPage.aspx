@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ChangePrescription.aspx.cs" Inherits="BendikPetUI.ChangePrescription" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FillPrescriptionPage.aspx.cs" Inherits="BendikPetUI.FillPrescriptionPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MasterPageHead" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BodySection" runat="server">
-    <h4>Change Prescription Page</h4>
+    <h4>Fill Prescription Page</h4>
     <br />
     <br />
     <div class="row">
@@ -51,16 +51,27 @@
         </div>
     </div>
     <div class="row">
-        <label>Previous Prescription</label>
-        <p>
-            Name of original prescription
-        </p>
-    </div>
-    <label>Replacement Prescription</label>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button">
-            Dropdown button
-        </button>
-    </div>
+        <label>Requested Prescription</label>
+        <div class="dropdown">
+            <h3>Prescription Name</h3>
 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <br />
+            <br />
+            <div class="btn btn-success">Submit</div>
+        </div>
+        <div class="col-md-1">
+            <br />
+            <br />
+            <div class="btn btn-danger">Not In Stock</div>
+        </div>
+        <div class="col-md-1">
+            <br />
+            <br />
+            <div class="btn btn-warning">Request Replacement</div>
+        </div>
+    </div>
 </asp:Content>

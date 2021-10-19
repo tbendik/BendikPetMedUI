@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="ChangePrescription.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="FillPrescriptionPage.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="NewPrescription.aspx" />
     <Content Include="NotifyCustomerScreen.aspx" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillPrescriptionPage.aspx.cs">
+      <DependentUpon>FillPrescriptionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillPrescriptionPage.aspx.designer.cs">
+      <DependentUpon>FillPrescriptionPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
