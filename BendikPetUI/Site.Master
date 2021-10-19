@@ -9,117 +9,152 @@
     </asp:ContentPlaceHolder>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
+        body {
+            padding: 10px;
+        }
+
         .list-group {
             max-height: 100vh;
             overflow: scroll;
             -webkit-overflow-scrolling: touch;
+            background-color: dimgrey;
         }
 
         #side-bar {
             max-width: 15vw;
+            min-height: 91vh;
             max-height: 91vh;
+        }
+
+        li {
+            display: inline;
+            list-style: none;
+        }
+
+        ul {
+            float: right;
+        }
+
+        #content {
+            padding: 3rem;
+            background-color: cornsilk;
+        }
+
+        #banner {
+            text-align: center;
+            background-color: azure;
+            font-family: 'Leelawadee UI';
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+        }
+
+        .box-ok {
+            background-color: green;
+        }
+
+        .box-attention {
+            background-color: darkorange;
+        }
+
+        .box-stop {
+            background-color: red;
+        }
+
+        .status-text{
+            
+            font-size: .8rem;
         }
     </style>
 </head>
 <body>
 
     <form id="form1" runat="server">
-        <h1 style="border: 2px solid red; color: blue">Master Page</h1>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-8">
+                <ul>
+                    <li><a href="#">View new prescription screen</a></li>
+                    <li><a href="#">View notify customer screen</a></li>
+                    <li><a href="#">View change prescription screen</a></li>
+                    <li><a href="#">View not-in-stock screen</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" id="banner">
+            <div class="col-sm-12 ">
+                <h1>PetMed System </h1>
+            </div>
+        </div>
         <div class="row">
             <div id="side-bar" class=" col-sm-3 list-group list-group-flush border-bottom scrollarea">
-                <a href="Default.aspx" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small>Wed</small>
+                <a href="Default.aspx" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="box box-ok text-center">
+                            </div>
+                        </div>
+                        <div class="status-text col-sm-8 text-center">
+                            <div class="row">
+                                Bendik - Eddie
+                            </div>
+                            <div class="row">
+                                Species: Cat
+                            </div>
+                            <div class="row">
+                                Medicinal Catnip
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
                 </a>
-                <a href="NewPrescription.aspx" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Tues</small>
+                <a href="NewPrescription.aspx" class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="box box-attention text-center">
+                            </div>
+                        </div>
+                        <div class="status-text col-sm-8 text-center">
+                            <div class="row">
+                                Spooner - Gary
+                            </div>
+                            <div class="row">
+                                Species: Cat
+                            </div>
+                            <div class="row">
+                                Asbedothol
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Mon</small>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="box box-stop text-center">
+                            </div>
+                        </div>
+                        <div class="status-text col-sm-8 text-center">
+                            <div class="row">
+                                Carey - Jacko
+                            </div>
+                            <div class="row">
+                                Species: Cat
+                            </div>
+                            <div class="row">
+                                Treemericothine
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Wed</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Tues</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Mon</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Wed</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Tues</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Mon</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Wed</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Tues</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Mon</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
                 </a>
             </div>
-        
 
-        <div class="col-sm-9" id="content">
-            <asp:ContentPlaceHolder ID="BodySection" runat="server">
-            </asp:ContentPlaceHolder>
+
+            <div class="col-sm-9" id="content">
+                <asp:ContentPlaceHolder ID="BodySection" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
-            </div>
 
     </form>
 </body>
